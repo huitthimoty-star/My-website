@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Thimoty Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+            <img src="UST logo.png" alt="" style="height: 35px;width: 35px;"> <img src="Faculty-of-Engineering.png" alt="" style="height: 35px;width: 35px;"> <span>THIMOTY JOSHUA HUIT - ECE JOURNAL</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="Home.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="About me.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="educ.html">Educational Philosophy</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="Student Outcomes.html">Student Outcomes</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="Contact.html">Contact Me</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="Home.html">Home</a>
+                <a href="About me.html">About</a>
+                <a href="educ.html">Educational Philosophy</a>
+                <a href="Student Outcomes.html">Student Outcomes</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+        <section>
+            <div class="main-container">
+                <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                    <img src="SO6.jpg" alt="" style="height: 400px;width: 400px;">
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000"> <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800"> LABORATORY REPORT<span></span></h1> 
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000"> The Chemistry Lab Report is a detailed summary of our experiment that presents the procedures, observations, and results. It serves as both an assessment of our understanding and a record of the data gathered during the experiment. <p> </p>
+                </div>
+                <div class="content">
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">SO6 <span>EXPERIMENTATION AND ANALYSIS</span></h1> 
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">An ability to develop and conduct appropriate experimentation, analyze and interpret data, and use engineering judgment to draw conclusions  </p>
+                    <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                        <a href="https://web.facebook.com/thimoty.huit.2024/" ><i class="fa-brands fa-facebook"></i></a>
+                        <a href="Contact.html"><i class="fa-brands fa-google"></i></a>
+
+                    </div>
+                    <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                        <a href="SO6.html"><button>Go Back</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+</body>
+</html>

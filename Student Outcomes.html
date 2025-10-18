@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Thimoty Portfolio</title>
+    <link rel="stylesheet" href="Student Outcomes.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+            <img src="UST logo.png" alt="" style="height: 35px;width: 35px;"> <img src="Faculty-of-Engineering.png" alt="" style="height: 35px;width: 35px;"> <span>THIMOTY JOSHUA HUIT - ECE JOURNAL</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="Home.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="About me.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="educ.html">Educational Philosophy</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="Student Outcomes.html">Student Outcomes</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="Contact.html">Contact Me</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="Home.html">Home</a>
+                <a href="About me.html">About</a>
+                <a href="educ.html">Educational Philosophy</a>
+                <a href="Student Outcomes.html">Student Outcomes</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+        <section>
+            <div class="main-container">
+                <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                    <img src="main.jng" alt="">
+                </div>
+                <div class="content">
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">STUDENT OUTCOMES</span></h1>
+                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I can/I have <span></span></div>
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Student outcomes refer to the desired learning objectives or standards that schools and teachers aim for students to achieve, as well as the educational, societal, and life effects resulting from students being educated. They are often expressed as measurable statements that specify what learners will know or be able to do after completing a course. Overall, student outcomes are critical for assessing the effectiveness of educational systems and ensuring that all students reach their full potential.  </p>
+                    <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                        <a href="https://web.facebook.com/thimoty.huit.2024/" ><i class="fa-brands fa-facebook"></i></a>
+                        <a href="Contact.html"><i class="fa-brands fa-google"></i></a>
+                    </div>
+                    <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                        <a href="SO1.html"><button>SO1</button></a>
+                        <a href="SO2.html"><button>SO2</button></a>
+                        <a href="SO3.html"><button>SO3</button></a>
+                        <a href="SO4.html"><button>SO4</button></a>
+                        <a href="SO5.html"><button>SO5</button></a>
+                        <a href="SO6.html"><button>SO6</button></a>
+                        <a href="SO7.html"><button>SO7</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+</body>
+</html>

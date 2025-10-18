@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Thimoty Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+            <img src="UST logo.png" alt="" style="height: 35px;width: 35px;"> <img src="Faculty-of-Engineering.png" alt="" style="height: 35px;width: 35px;"> <span>THIMOTY JOSHUA HUIT - ECE JOURNAL</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="Home.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="About me.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="Seal.html">Educational Philosophy</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#">Student Outcomes</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="Contact.html">Contact Me</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="Home.html">Home</a>
+                <a href="About me.html">About</a>
+                <a href="educ.html">Educational Philosophy</a>
+                <a href="Student Outcomes.html">Student Outcomes</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+        <section>
+                </div>
+                <div class="content">
+                    <h3 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">SERVANT LEADER</span></h3> 
+                    <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">— Show leadership abilities to promote advocacies for life, freedom, justice, and solidarity in the service of the family, the local and global communities, the Church and the environment. <p> </p>
+                        — Implement relevant projects and activities that speak of Christian compassion to the poor and the marginalized in order to raise their quality of life <p></p>
+                        — Show respect for the human person, regardless of race, religion, age, and gender. </p>
+                        
+                        <h3 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">EFFECTIVE COMMUNICATOR AND COLLABORATOR</span></h3> 
+                    <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">— Express oneself clearly, correctly, and confidently in various environments, contexts, and technologies of human interaction<p>
+                        — Work productively with individuals or groups from diverse cultures and demographics <p>
+                        — Show profound respect for individual differences and/or uniqueness as members of Gods creation </p>
+
+                        <h3 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">ANALYTICAL AND CREATIVE THINKER</span></h3> 
+                    <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">— Show judiciousness and resourcefulness in making personal and professional decisions <p> </p>
+                        — Engage in research undertakings that respond to societal issues <p> </p>
+                        — Express personal and professional insights through an ethical and evidence-based approach </p>
+
+                        <h3 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">LIFE LEARNER</span></h3> 
+                    <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">— Engage in reflective practice to ensure disciplinal excellence and professional development <p></p>
+                        — Exhibit preparedness and interest for continuous upgrading of competencies required by the profession or area of specialization <p></p>
+                        — Manifest fidelity to the teachings of Christ, mediated by the Catholic Church, in the continuous deepening of faith and spirituality in dealing with new life situations and challenges <p></p>
+
+                        <a href="https://web.facebook.com/thimoty.huit.2024/" ><i class="fa-brands fa-facebook"></i></a>
+                        <a href="Contact.html"><i class="fa-brands fa-google"></i></a>
+
+                    </div>
+                    <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                        <a href="educ.html"><button>Go Back</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+</body>
+</html>
